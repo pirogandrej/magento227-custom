@@ -6,7 +6,9 @@ var config = {
             "Magento_Checkout/js/view/shipping-information/address-renderer/default":
                 "Custom_Address/js/view/shipping-information/address-renderer/default-override",
             "Magento_Checkout/js/view/billing-address":
-                "Custom_Address/js/view/billing-address-override"
+                "Custom_Address/js/view/billing-address-override",
+            "Magento_Checkout/js/view/shipping-information":
+                "Custom_Address/js/view/shipping-information"
         }
     },
     config: {

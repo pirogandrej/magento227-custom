@@ -5,7 +5,12 @@
     <body>
         <referenceContainer name="content">
             <referenceBlock name="customer_address_edit1" remove="true"/>
-            <block class="Custom\Address\Block\Address\Edit" name="extra_address_edit_custom" template="address/edit.phtml" cacheable="false"/>
+            <block
+                    class="Custom\Address\Block\Address\Edit"
+                    name="extra_address_edit_custom"
+                    template="address/edit.phtml"
+                    cacheable="false"
+            />
         </referenceContainer>
     </body>
 </page>
