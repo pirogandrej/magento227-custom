@@ -1,6 +1,6 @@
 <?php
 
-namespace Custom\Address\Model\Plugin\Checkout;
+namespace Custom\Address\Plugin;
 
 use Custom\Address\Model\Address\TypeFactory;
 
@@ -53,7 +53,7 @@ class LayoutProcessor
                     'provider' => 'checkoutProvider',
                     'visible' => true,
                     'validation' => ['required-entry' => true],
-                    'sortOrder' => 250,
+                    'sortOrder' => 251,
                     'id' => 'type'
                 ];
             }

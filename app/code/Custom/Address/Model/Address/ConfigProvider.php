@@ -4,7 +4,7 @@ namespace Custom\Address\Model\Address;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
 
-class TypeProvider implements ConfigProviderInterface
+class ConfigProvider implements ConfigProviderInterface
 {
     protected $type;
 

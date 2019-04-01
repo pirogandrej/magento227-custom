@@ -1,11 +1,16 @@
 <?xml version="1.0"?>
 
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Checkout\Model\CompositeConfigProvider">
         <arguments>
             <argument name="configProviders" xsi:type="array">
-                <item name="type_address_provider" xsi:type="object">Custom\Address\Model\Address\TypeProvider</item>
+                <item name="type_address_provider" xsi:type="object">Custom\Address\Model\Address\ConfigProvider</item>
             </argument>
         </arguments>
     </type>
+    <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
+        <plugin name="add_custom_field_checkout_form" type="Custom\Address\Plugin\LayoutProcessor" sortOrder="100"/>
+    </type>
 </config>
+

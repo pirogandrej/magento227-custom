@@ -1,10 +1,10 @@
 <?php
 
-namespace Custom\Address\Model\Plugin;
+namespace Custom\Address\Plugin;
 
-class FormatterAddress
+class SaveTypeToAdminOrderAddress
 {
-    public function beforeGetFormattedAddress($block,$address)
+    public function beforeGetFormattedAddress($block, $address)
     {
         if($attributes = $address->getExtensionAttributes()){
             $address->setType($attributes->getType());
