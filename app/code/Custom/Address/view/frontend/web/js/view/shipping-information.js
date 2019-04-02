@@ -47,6 +47,21 @@ define([
         backToShippingMethod: function () {
             sidebarModel.hide();
             stepNavigator.navigateTo('shipping', 'opc-shipping_method');
+        },
+
+        getType:function(){
+            var val;
+            var address;
+            var typeAddressId;
+            address = quote.shippingAddress();
+            typeAddressId = address.customAttributes.type;
+            $.each(window.checkoutConfig.type, function(index, value ) {
+                if (index == typeAddressId){
+                    val = value;
+                }
+            });
+            return val;
         }
+
     });
 });
